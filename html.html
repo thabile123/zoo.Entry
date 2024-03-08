@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Ticket Purchase</title>
+  <link rel="stylesheet" href="../Downloads/css.css">
+</head>
+<body>
+  <h1>Zoo Ticket Purchase</h1>
+  <div class="container">
+    <form id="entryForm">
+      <label for="age">Enter Age:</label>
+      <input type="number" id="age" name="age" min="0" required>
+      <div id="thabile" style="display: none;">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required min="1" value="1">
+      </div>
+      <input type="submit" value="Calculate Ticket Price">
+    </form>
+    <div id="TicketPrice"></div>
+    <div id="totalPrice"></div>
+  </div>
+
+  <script src="../Downloads/entryForm.js"></script>
+</body>
+</html>
